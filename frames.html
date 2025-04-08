@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>B.Tech Subjects - Framed View</title>
+    <title>B.Tech Subjects Portal</title>
 </head>
+
 <frameset rows="15%,85%">
     <frame srcdoc="
         <html>
-            <body style='background:#004080;color:white;text-align:center;font-family:sans-serif;'>
+            <body style='
+                background-color: #0066cc;
+                color: white;
+                text-align: center;
+                font-family: Arial, sans-serif;
+                padding: 10px;'>
                 <h1>B.Tech Subjects Portal</h1>
             </body>
         </html>" name="header" scrolling="no" noresize>
-        
+    
     <frameset cols="25%,75%">
         <frame srcdoc='
             <html>
-                <body style="background:#f0f0f0;font-family:Verdana;">
-                    <h3>Semesters</h3>
-                    <ul>
-                        <li><a href=&quot;#&quot; onclick=&quot;parent.main.location.href=&#39;#sem1&#39;&quot;>Semester 1</a></li>
-                        <li><a href=&quot;#&quot; onclick=&quot;parent.main.location.href=&#39;#sem2&#39;&quot;>Semester 2</a></li>
-                        <li><a href=&quot;#&quot; onclick=&quot;parent.main.location.href=&#39;#sem3&#39;&quot;>Semester 3</a></li>
+                <body style="
+                    background-color: #f2f2f2;
+                    font-family: Verdana, sans-serif;
+                    padding: 15px;">
+                    <h3 style='color: #0066cc;'>Semesters</h3>
+                    <ul style='list-style-type: none; padding: 0;'>
+                        <li><a href=&quot;#&quot; onclick=&quot;parent.main.location.href=&#39;#sem1&#39;&quot; style='text-decoration:none;color:#333;padding:6px;display:block;border-left:4px solid #0066cc;'>Semester 1</a></li>
+                        <li><a href=&quot;#&quot; onclick=&quot;parent.main.location.href=&#39;#sem2&#39;&quot; style='text-decoration:none;color:#333;padding:6px;display:block;border-left:4px solid #cc6600;'>Semester 2</a></li>
+                        <li><a href=&quot;#&quot; onclick=&quot;parent.main.location.href=&#39;#sem3&#39;&quot; style='text-decoration:none;color:#333;padding:6px;display:block;border-left:4px solid #339933;'>Semester 3</a></li>
                     </ul>
                 </body>
             </html>' name="sidebar">
 
         <frame name="main" srcdoc='
             <html>
-                <body style="font-family:Arial;padding:20px;">
+                <body style="font-family: Arial, sans-serif; padding: 20px; background-color: #ffffff;">
                     <h2>Welcome</h2>
-                    <p>Select a semester from the left to view subjects.</p>
+                    <p style="font-size: 16px;">Please select a semester from the left panel to view the subjects offered in that term.</p>
                 </body>
             </html>'>
     </frameset>
 </frameset>
+
 </html>
+
