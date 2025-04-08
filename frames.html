@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>B.Tech Subjects - Framed View</title>
+</head>
+<frameset rows="15%,85%">
+    <frame srcdoc="
+        <html>
+            <body style='background:#004080;color:white;text-align:center;font-family:sans-serif;'>
+                <h1>B.Tech Subjects Portal</h1>
+            </body>
+        </html>" name="header" scrolling="no" noresize>
+        
+    <frameset cols="25%,75%">
+        <frame srcdoc='
+            <html>
+                <body style="background:#f0f0f0;font-family:Verdana;">
+                    <h3>Semesters</h3>
+                    <ul>
+                        <li><a href=&quot;#&quot; onclick=&quot;parent.main.location.href=&#39;#sem1&#39;&quot;>Semester 1</a></li>
+                        <li><a href=&quot;#&quot; onclick=&quot;parent.main.location.href=&#39;#sem2&#39;&quot;>Semester 2</a></li>
+                        <li><a href=&quot;#&quot; onclick=&quot;parent.main.location.href=&#39;#sem3&#39;&quot;>Semester 3</a></li>
+                    </ul>
+                </body>
+            </html>' name="sidebar">
+
+        <frame name="main" srcdoc='
+            <html>
+                <body style="font-family:Arial;padding:20px;">
+                    <h2>Welcome</h2>
+                    <p>Select a semester from the left to view subjects.</p>
+                </body>
+            </html>'>
+    </frameset>
+</frameset>
+</html>
